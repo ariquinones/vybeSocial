@@ -20,7 +20,7 @@
 }
 input {
 	width: 50%;
-    border: none;
+    border: 1px solid white;
     padding: 1%;
     height: 3em;
 }
@@ -32,8 +32,8 @@ button {
     color: white;
     background: transparent;
     padding: 1% 5%;
-    margin-left: -1%;
     height: 3em;
+    margin-left: -1%;
 }
 button:hover {
 	cursor: pointer;
