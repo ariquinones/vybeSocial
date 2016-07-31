@@ -388,9 +388,9 @@ button:focus {
 		width: 80%;
 		order: 2;
 	}
-	.mobileMenu {
+	/* .mobileMenu {
 		display: inline-block;
-	}
+	} */
   	.ctah2 {
   		font-size: 1.15em;
   	}
@@ -458,10 +458,10 @@ button:focus {
 		width: 80%;
 		order: 2;
 	}
-	.mobileMenu {
+	/* .mobileMenu {
 		display: inline-block;
 	}
-  	.ctah2 {
+ */  	.ctah2 {
   		font-size: 1.15em;
   	}
   	footer ul {
@@ -515,9 +515,9 @@ button:focus {
 		width: 80%;
 		order: 2;
 	}
-	.mobileMenu {
+	/* .mobileMenu {
 		display: inline-block;
-	}
+	} */
   	.ctah2 {
   		font-size: 1.15em;
   	}

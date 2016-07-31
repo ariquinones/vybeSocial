@@ -5,9 +5,12 @@ document.querySelector('button').addEventListener('click', function() {
 
 document.querySelector(".showMobileMenu").addEventListener('change', function() {
 	if (document.querySelector(".showMobileMenu").checked == true) {
+		document.querySelector(".mobileMenu").style.display = "inline-block"
 		document.querySelector(".mobileMenu").style.right = "5px"
 	}
 	if (document.querySelector(".showMobileMenu").checked == false) {
 		document.querySelector(".mobileMenu").style.right = "-50%"
+		document.querySelector(".mobileMenu").style.display = "none"
+
 	}
 })
