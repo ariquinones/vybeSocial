@@ -1,0 +1,239 @@
+/* #fo2li5 {
+	width: 30% !important; 
+}
+#fo2li6 {
+	width: 30% !important; 
+}
+#fo2li7 {
+	width: 30% !important; 
+}
+#fo2li9 {
+	width: 30% !important; 
+}
+#fo2li11 {
+	width: 30% !important; 
+}
+#fo2li12 {
+	width: 30% !important; 
+}
+#fo2li14 {
+	width: 30% !important; 
+}
+#fo2li13 {
+	width: 60% !important;
+	display: block;
+}
+ */
+
+.embed #container {
+    background: #1C2223;
+}
+.info {
+    display: inline-block;
+    clear: both;
+    margin: 0 0 5px 0;
+    padding: 0 1% 1.1em 1%;
+    border-bottom: none;
+    color: white;
+    text-align: center;
+}
+.info h2 {
+    font-weight: normal;
+    font-size: 160%;
+    margin: 0 0 5px 0;
+    clear: left;
+    color: #9EDAE3;
+}
+.wufoo .info h2 {
+    font-size: 2em;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(255,255,255,.8);
+}
+.info div {
+    font-size: 95%;
+    line-height: 135%;
+    color: #63C8CF;
+}
+.wufoo .info, .wufoo .paging-context {
+    border-bottom: none;
+}
+.wufoo .info div {
+    font-size: 95%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #63C8CF;
+}
+
+.noI form li, .altInstruct form li {
+    /* width: 30% !important; */
+    display: inline-block;
+    vertical-align: top;
+    margin: 2% 0%;
+}
+.noI form li, .altInstruct form li {
+    width: 30%;
+}
+.wufoo li.focused {
+    background-color: transparent;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 100%;
+}
+
+label.desc, legend.desc {
+	font-size: 1em;
+    font-weight: 100;
+    color: rgba(255,255,255,.3);
+}
+.wufoo li.focused label.desc, .wufoo li.focused legend.desc, .wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label, .safari .wufoo li.focused input.file {
+    color: rgba(255,255,255,.3);
+}
+form span.req {
+    color: rgba(255,255,255,.3) !important;
+}
+
+input.medium, select.medium {
+    width: 100%;
+}
+
+input.text, input.search, textarea.textarea {
+    /* border-top: 1px solid #7c7c7c; */
+    /* border-left: 1px solid #c3c3c3; */
+    /* border-right: 1px solid #c3c3c3; */
+    /* border-bottom: 1px solid #ddd; */
+    /* background: #fff url(/images/fieldbg.gif) repeat-x top; */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+form li.buttons {
+    display: block !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.safari input.btTxt {
+    font-size: 1.5em;
+    background: #63C8CF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+	border-radius: 2px;
+	background: #63C8CF;
+	cursor: pointer;
+}
+
+#fo2li13 {
+	width: 60%;
+	display: block;
+}
+textarea.medium {
+    height: 5em;
+    resize: none;
+}
+#container, html.embed {
+    background-color: transparent;
+}
+.create-message {
+	display: none;
+}
+.start-cta {
+	display: none;
+}
+.embed .confirm .create-message {
+    opacity: 0;
+}
+.embed .confirm a.start-cta {
+    opacity: 0;
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	#fo2li5 {
+		width: 90% !important; 
+	}
+	#fo2li6 {
+		width: 90% !important; 
+	}
+	#fo2li7 {
+		width: 90% !important; 
+	}
+	#fo2li9 {
+		width: 90% !important; 
+	}
+	#fo2li11 {
+		width: 90% !important; 
+	}
+	#fo2li12 {
+		width: 90% !important; 
+	}
+	#fo2li14 {
+		width: 90% !important; 
+	}
+	#fo2li13 {
+		width: 90% !important;
+	}
+
+	.notranslate {
+		width: 100% !important;
+	}
+	.embed .noI form li, .altInstruct form li {
+    	width: 90% !important;
+    	display: block;
+	}
+}
+
+@media screen and (max-device-width: 480px) {
+	#fo2li5 {
+		width: 90% !important; 
+	}
+	#fo2li6 {
+		width: 90% !important; 
+	}
+	#fo2li7 {
+		width: 90% !important; 
+	}
+	#fo2li9 {
+		width: 90% !important; 
+	}
+	#fo2li11 {
+		width: 90% !important; 
+	}
+	#fo2li12 {
+		width: 90% !important; 
+	}
+	#fo2li14 {
+		width: 90% !important; 
+	}
+	#fo2li13 {
+		width: 90% !important;
+	}
+	.embed .noI form li, .altInstruct form li {
+    	width: 90% !important;
+    	display: block;
+	}
+	.notranslate {
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

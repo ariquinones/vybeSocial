@@ -3,8 +3,188 @@
 	margin: 0; 
 	font-family: 'Avenir', sans-serif;
 }
+body {
+	background: #1C2223;
+}
+a {
+	text-decoration: none;
+	color: white; 
+}
+a:visited {
+	text-decoration: none;
+}
+.textCharcoal {
+	color: #1C2223;
+	opacity: .9;
+}
+.vsHeader {
+	width: 100%;
+	padding: 1%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.vsLogoContainer {
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.vsLogoContainer img {
+	width: 100%;
+}
+.vsNavBar {
+	display: inline-block;
+}
+.vsMenu {
+	list-style: none;
+	width: 200%;
+}
+.vsMenu li {
+	display: inline;
+	color: white;
+	padding: 1%; 
+	opacity: .9;
+}
+.vsMenu li:hover {
+	cursor: pointer; 
+	opacity: 1;
+}
+.textWhite{
+	color: white;
+}
+.ctaBtn {
+	background: #E35529;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 30px;
+	font-size: 1.25em;
+	margin-top: 15px;
+}
+#ourApproachContainer {
+	background: white; 
+	width: 100%;
+	padding: 4% 2%;
+	text-align: center; 
+}
+.individualApproach {
+	width: 90%;
+	margin: 5% auto;
+	/* vertical-align: top; */
+	padding: 1%;
+}
+.individualApproach > div {
+	display: inline-block;
+}
+.individualStepProcess {
+	width: 50%;
+	vertical-align: middle;
+	text-align: left;
+	margin: auto 5%;
+}
+.individualStepProcess > h4 {
+	margin: 2% auto;
+	color: #1C2223;
+}
+.individualStepProcess > p {
+	color: #1C2223;
+	opacity: .78;
+}
+.iconHolder {
+	width: 10em;
+    height: 10em;
+    border: 1px solid #63C8CF;
+    background: #63C8CF;
+    padding: 2%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.icon {
+	width: 100%;
+}
+#vsTeamContainer {
+	width: 100%;
+	background: #63C8CF;
+	text-align: center;
+	padding: 4% 2%;
+}
+.teamMemberContainer {
+	border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 1px 2px 10px rgba(0,0,0,.1);
+    width: 30%;
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    margin: 1%;
+    padding: 1%;
+    min-height: 35em;
+}
+.teamMemberPictureContainer {
+	width: 16em;
+    height: 12em;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.teamMemberImg {
+    width: 140%;
+    height: 100%;
+    margin: auto;
+    margin-left: -15%;
+}
+.memberBio {
+	padding: 5%;
+	text-align: left;
+}
+#vsContactUsContainer {
+	text-align: center;
+	width: 100%;
+	padding: 5%;
+	background: url("../Images/sociaMediaCTA.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.contactUsBtn {
+	background: #E35529;
+	color: white;
+	font-size: 1.5em;
+	border: 1px solid #E35529;
+	border-radius: 5px;
+	opacity: .9;
+	margin: 5% 0%;
+}
+.contactUsBtn:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+footer {
+	padding: 2%;
+	width: 100%;
+	background: #63C8CF;
+	color: white;
+}
+footer ul {
+	list-style: none;
+	display: inline-block;
+	width: 49%;
+}
+footer ul li {
+	display: inline;
+	margin: 2%;
+}
+.socialMediaIconsContainer {
+	text-align: right;
+}
+.socialMediaIcon {
+	width: 2em;
+	height: 2em;
+}
+
+
+/* css for splash page */
 #container {
-	background-image: url("../Images/vybeSocialCover.jpg");	
+	background-image: url("../Images/vybeSocialHeaderImg.jpg");	
 	width: 100%;
     height: 100vh;
     background-position: center;
@@ -17,7 +197,7 @@
 .guestInfo {
 	position: absolute;
 	top: 30%;
-	left: 50%;
+	left: 25%;
 	transform: translateX(-50%);
 	width: 60%;
 	text-align: center;
@@ -49,6 +229,111 @@ button:focus {
 
 
 
+
+/* Contact Us Page */
+.contactContainer {
+	text-align: center;
+	background: #1C2223;
+	padding: 2%;
+	margin-top: 10%;
+}
+.contactContainer h3 {
+	color: #9EDAE3;
+	margin: 5% auto;
+}
+.contactContainer strong {
+	color: #63C8CF;
+}
+.contactContainer h1 {
+	color: rgba(255,255,255,.8);
+	margin: 2% auto;
+}
+.contactContainer label {
+	color: rgba(255,255,255,.3);
+	display: block;
+}
+.contactContainer input {
+	width: 49%;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	background: transparent;
+	color: white;
+}
+.contactContainer form {
+	text-align: left;
+	margin: 2% auto;
+	width: 70%;
+}
+.formInformationContainer {
+	display: inline-block;
+	width: 30%;
+	margin: 2% 1%;
+}
+.formInformationContainer input {
+	width: 100%;
+}
+.budgetDetails {
+	display: block;
+	width: 100%;
+}
+.budgetDetails input {
+	width: 50%;
+	display: inline-block;
+}
+.budgetDetails span {
+	color: rgba(255,255,255,.3);
+	margin-left: 5%;
+}
+.projectDetails {
+	display: block;
+	width: 100%;
+}
+.submitBtn {
+	display: block;
+	border: none;
+	border-radius: 1px;
+	background: #63C8CF;;
+	margin: 2% auto;
+	font-size: 1.25em;
+}
+.contactForm {
+	width: 80%;
+	margin: auto;
+}
+
+
+.mobileMenu {
+	list-style: none;
+	text-align: left;
+	position: absolute;
+	right: -50%;
+	transition: 1s ease all;
+	display: none;
+}
+.mobileMenu > li {
+	margin-bottom: 5px;
+}
+.showMobileMenu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 5em;
+	height: 4em;
+	opacity: 0;
+	z-index: 2;
+}
+.burgerMenuHolder {
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	visibility: hidden;
+}
+.menuIcon {
+	width: 100%;
+}
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.guestInfo {
 		width: 90%;
@@ -60,6 +345,9 @@ button:focus {
 	button {
 		height: 3em;
 		font-size: 1em;
+	}
+	.teamMemberContainer {
+		width: 80%;
 	}
 }
 @media screen and (max-device-width: 480px) {
@@ -75,5 +363,76 @@ button:focus {
 		height: 3em;
 		font-size: 1.5em;
 	}
+	.teamMemberContainer {
+		width: 80%;
+	}
 
 }	
+
+@media(max-width:768px) {
+	.vsHeader {
+		text-align: left;
+	}
+	.vsMenu {
+		display: none;
+	}
+	.vsLogoContainer {
+		width: 5em;
+		margin-left: 5px;
+  	}
+	.burgerMenuHolder {
+		visibility: visible;
+	}
+	.guestInfo {
+		left: 50%;
+		width: 80%;
+	}
+	.teamMemberContainer {
+		width: 95%;
+		padding: 5%;
+	}
+	.individualApproach {
+		width: 95%;
+		display: flex;
+		flex-flow: column;
+	}
+	.individualApproach > div {
+    	display: block;
+    	margin: auto;
+	}
+	.iconHolder {
+		width: 5em;
+		height: 5em;
+		order: 1;
+	}
+	.individualStepProcess {
+		width: 80%;
+		order: 2;
+	}
+	.mobileMenu {
+		display: inline-block;
+	}
+  	.ctah2 {
+  		font-size: 1.15em;
+  	}
+  	footer ul {
+  		font-size: .5em;
+  		width: 60%;
+  	}
+  	.socialMediaIconsContainer {
+  		width: 30%;
+  		text-align: right;
+  	}
+}
+#termsContainer {
+	color: white;
+	margin: auto;
+	width: 80%;
+	line-height: 1.5;
+	padding: 3% 0;
+	opacity: .8;
+}
+#termsContainer > h3 {
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
