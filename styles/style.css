@@ -300,8 +300,6 @@ button:focus {
 	width: 80%;
 	margin: auto;
 }
-
-
 .mobileMenu {
 	list-style: none;
 	text-align: left;
@@ -311,7 +309,8 @@ button:focus {
 	display: none;
 }
 .mobileMenu > li {
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	font-size: 2em;
 }
 .showMobileMenu {
 	position: absolute;
@@ -323,8 +322,8 @@ button:focus {
 	z-index: 2;
 }
 .burgerMenuHolder {
-	width: 2em;
-	height: 2em;
+	width: 5em;
+	height: 5em;
 	position: absolute;
 	top: 15px;
 	right: 15px;
@@ -338,6 +337,20 @@ button:focus {
 	.guestInfo {
 		width: 90%;
 	}
+	.guestInfo > h1 {
+		font-size: 4em;
+	}
+	.guestInfo > h2 {
+		font-size: 2em;
+	}
+	.ctaBtn {
+		font-size: 3em;
+    	border-radius: 15px;
+	}
+	.sectionTitle {
+		font-size: 3em;
+	}
+
 	input {
 		height: 3em;
 		font-size: 1em;
@@ -356,8 +369,8 @@ button:focus {
 		display: none;
 	}
 	.vsLogoContainer {
-		width: 5em;
-		margin-left: 5px;
+		width: 10em;
+		margin-left: 15px;
   	}
 	.burgerMenuHolder {
 		visibility: visible;
@@ -370,6 +383,16 @@ button:focus {
 		width: 95%;
 		padding: 5%;
 	}
+	.teamMemberPictureContainer {
+		width: 26em;
+		height: 22em;
+	}
+	.teamMemberContainer > h4 {
+		font-size: 2em;
+	}
+	.teamMemberContainer > p {
+		font-size: 2em;
+	}
 	.individualApproach {
 		width: 95%;
 		display: flex;
@@ -380,98 +403,151 @@ button:focus {
     	margin: auto;
 	}
 	.iconHolder {
-		width: 5em;
-		height: 5em;
+		width: 10em;
+		height: 10em;
 		order: 1;
 	}
 	.individualStepProcess {
 		width: 80%;
 		order: 2;
+	}
+	.individualStepProcess > h4 {
+		font-size: 2.5em;
+	}
+	.individualStepProcess > p {
+		font-size: 1.5em;
 	}
 	/* .mobileMenu {
 		display: inline-block;
 	} */
   	.ctah2 {
-  		font-size: 1.15em;
+  		font-size: 3em;
+  	}
+  	.contactUsBtn {
+  		font-size: 3em;
+    	border-radius: 15px;
   	}
   	footer ul {
-  		font-size: .5em;
+  		font-size: 1em;
   		width: 60%;
   	}
   	.socialMediaIconsContainer {
   		width: 30%;
   		text-align: right;
+  	}
+  	.socialMediaIcon {
+  		width: 2.5em;
+  		height: 2.5em;
   	}
 }
+
+
 @media screen and (max-device-width: 480px) {
-	.guestInfo {
-		width: 90%;
-	}
-	input {
-		height: 3em;
-		font-size: 1.5em;
-		width: 60%;
-	}
-	button {
-		height: 3em;
-		font-size: 1.5em;
-	}
-	.teamMemberContainer {
-		width: 80%;
-	}
-	.vsHeader {
-		text-align: left;
-	}
-	.vsMenu {
-		display: none;
-	}
-	.vsLogoContainer {
-		width: 5em;
-		margin-left: 5px;
-  	}
-	.burgerMenuHolder {
-		visibility: visible;
-	}
-	.guestInfo {
-		left: 50%;
-		width: 80%;
-	}
-	.teamMemberContainer {
-		width: 95%;
-		padding: 5%;
-	}
-	.individualApproach {
-		width: 95%;
-		display: flex;
-		flex-flow: column;
-	}
-	.individualApproach > div {
-    	display: block;
-    	margin: auto;
-	}
-	.iconHolder {
-		width: 5em;
-		height: 5em;
-		order: 1;
-	}
-	.individualStepProcess {
-		width: 80%;
-		order: 2;
-	}
-	/* .mobileMenu {
-		display: inline-block;
-	}
- */  	.ctah2 {
-  		font-size: 1.15em;
-  	}
-  	footer ul {
-  		font-size: .5em;
-  		width: 60%;
-  	}
-  	.socialMediaIconsContainer {
-  		width: 30%;
-  		text-align: right;
-  	}
+		.guestInfo {
+			width: 90%;
+		}
+		.guestInfo > h1 {
+			font-size: 4em;
+		}
+		.guestInfo > h2 {
+			font-size: 2em;
+		}
+		.ctaBtn {
+			font-size: 3em;
+	    	border-radius: 15px;
+		}
+		.sectionTitle {
+			font-size: 3em;
+		}
+
+		input {
+			height: 3em;
+			font-size: 1em;
+		}
+		button {
+			height: 3em;
+			font-size: 1em;
+		}
+		.teamMemberContainer {
+			width: 80%;
+		}
+		.vsHeader {
+			text-align: left;
+		}
+		.vsMenu {
+			display: none;
+		}
+		.vsLogoContainer {
+			width: 10em;
+			margin-left: 15px;
+	  	}
+		.burgerMenuHolder {
+			visibility: visible;
+		}
+		.guestInfo {
+			left: 50%;
+			width: 80%;
+		}
+		.teamMemberContainer {
+			width: 95%;
+			padding: 5%;
+		}
+		.teamMemberPictureContainer {
+			width: 26em;
+			height: 22em;
+		}
+		.teamMemberContainer > h4 {
+			font-size: 2em;
+		}
+		.teamMemberContainer > p {
+			font-size: 2em;
+		}
+		.individualApproach {
+			width: 95%;
+			display: flex;
+			flex-flow: column;
+		}
+		.individualApproach > div {
+	    	display: block;
+	    	margin: auto;
+		}
+		.iconHolder {
+			width: 10em;
+			height: 10em;
+			order: 1;
+		}
+		.individualStepProcess {
+			width: 80%;
+			order: 2;
+		}
+		.individualStepProcess > h4 {
+			font-size: 2.5em;
+		}
+		.individualStepProcess > p {
+			font-size: 1.5em;
+		}
+		/* .mobileMenu {
+			display: inline-block;
+		} */
+	  	.ctah2 {
+	  		font-size: 3em;
+	  	}
+	  	.contactUsBtn {
+	  		font-size: 3em;
+	    	border-radius: 15px;
+	  	}
+	  	footer ul {
+	  		font-size: 1em;
+	  		width: 60%;
+	  	}
+	  	.socialMediaIconsContainer {
+	  		width: 30%;
+	  		text-align: right;
+	  	}
+	  	.socialMediaIcon {
+	  		width: 2.5em;
+	  		height: 2.5em;
+	  	}
 
 }	
 
@@ -483,9 +559,9 @@ button:focus {
 		display: none;
 	}
 	.vsLogoContainer {
-		width: 5em;
-		margin-left: 5px;
-  	}
+		width: 10em;
+		margin-left: 15px;
+	 }
 	.burgerMenuHolder {
 		visibility: visible;
 	}
@@ -530,6 +606,8 @@ button:focus {
   		text-align: right;
   	}
 }
+
+
 #termsContainer {
 	color: white;
 	margin: auto;
