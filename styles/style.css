@@ -89,6 +89,7 @@ a:visited {
 	color: #1C2223;
 	opacity: .78;
 }
+
 .iconHolder {
 	width: 10em;
     height: 10em;
@@ -116,7 +117,7 @@ a:visited {
     vertical-align: top;
     margin: 1%;
     padding: 1%;
-    min-height: 35em;
+    min-height: 45em;
 }
 .teamMemberPictureContainer {
 	width: 16em;
@@ -307,17 +308,23 @@ button:focus {
 	right: -50%;
 	transition: 1s ease all;
 	display: none;
+	z-index: 3;
 }
 .mobileMenu > li {
 	margin-bottom: 15px;
 	font-size: 2em;
 }
+@media(max-width:768px) {
+	.mobileMenu > li {
+		font-size: 2.5em;
+	}
+}
 .showMobileMenu {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 5em;
-	height: 4em;
+	width: 10em;
+	height: 10em;
 	opacity: 0;
 	z-index: 2;
 }
@@ -568,6 +575,9 @@ button:focus {
 	.guestInfo {
 		left: 50%;
 		width: 80%;
+	}
+	.individualStepProcess > p {
+		font-size: 1.1em;
 	}
 	.teamMemberContainer {
 		width: 95%;

@@ -59,6 +59,11 @@
 .wufoo .info, .wufoo .paging-context {
     border-bottom: none;
 }
+@media(max-width:768px) {
+	.wufoo .info, .wufoo .paging-context {
+    	font-size: 1.5em;
+	}
+}
 .wufoo .info div {
     font-size: 95%;
     font-family: inherit;
@@ -85,6 +90,12 @@
     font-weight: normal;
     color: white;
     font-size: 100%;
+}
+@media(max-width:768px) {
+	.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
+	    font-size: 1.25em;
+	    margin-top: 1%;
+	}
 }
 
 label.desc, legend.desc {
@@ -129,6 +140,7 @@ form li.buttons {
 	border-radius: 2px;
 	background: #63C8CF;
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 
 #fo2li13 {
