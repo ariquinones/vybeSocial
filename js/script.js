@@ -5,21 +5,20 @@
 $('.showMobileMenu').on('change', function() {
 	if (document.querySelector(".showMobileMenu").checked == true) {
 		$('.menuIcon').addClass('rotate')
-		document.querySelector(".mobileMenu").style.display = "inline-block"
+		$('.mobileMenu').css('display', 'inline-block')
 		function slow() {
-			document.querySelector(".mobileMenu").style.right = "0px"
-			document.querySelector(".mobileMenu").style.top = "95%"
+			$('.mobileMenu').css('right', '0px')
+			$('.mobileMenu').css('top', '95%')
 		}
 		setTimeout(slow, 500)
-
 	}
 	if (document.querySelector(".showMobileMenu").checked == false) {
 		$('.menuIcon').removeClass('rotate')
-		document.querySelector(".mobileMenu").style.top = "-1000%"
-		function slow() {
-			document.querySelector(".mobileMenu").style.display = "none"
+		$('.mobileMenu').css('top', '-1000%')
+		function hide() {
+			$('.mobileMenu').css('display', 'none')
 		}
-		setTimeout(slow, 1000)
+		setTimeout(hide, 1000)
 	}
 })
 $(document).scroll(function() {
