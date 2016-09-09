@@ -532,6 +532,10 @@ button:focus {
 }
 .menuIcon {
 	width: 100%;
+	transition: 1.5s ease all;
+}
+.rotate {
+	transform: rotate(90deg);
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
