@@ -15,7 +15,7 @@ a:visited {
 }
 .textCharcoal {
 	color: #1C2223;
-	opacity: .9;
+	opacity: .8;
 }
 .vsHeader {
 	width: 100%;
@@ -41,16 +41,27 @@ a:visited {
 }
 .vsMenu li {
 	display: inline;
-	color: white;
+	color: #FFF;
 	padding: 1%; 
-	opacity: .9;
+	opacity: .7;
 }
 .vsMenu li:hover {
 	cursor: pointer; 
 	opacity: 1;
+	color: #E35529;
+}
+.guestInfo {
+	transition: .5s ease all;
+}
+.suezFont {
+	font-family: 'Suez One', serif;
+	letter-spacing: 1.25px;
 }
 .textWhite{
 	color: white;
+}
+.sectionTitle {
+	margin: 2% 0;
 }
 .ctaBtn {
 	background: #E35529;
@@ -61,7 +72,6 @@ a:visited {
 	margin-top: 15px;
 }
 #ourApproachContainer {
-	background: white; 
 	width: 100%;
 	padding: 4% 2%;
 	text-align: center; 
@@ -83,10 +93,8 @@ a:visited {
 }
 .individualStepProcess > h4 {
 	margin: 2% auto;
-	color: #1C2223;
 }
 .individualStepProcess > p {
-	color: #1C2223;
 	opacity: .78;
 }
 
@@ -138,10 +146,228 @@ a:visited {
 	padding: 5%;
 	text-align: left;
 }
+
+/* Why Vybe Section */
+#whySocialContainer {
+	width: 100%;
+	padding: 4% 2%;
+	text-align: center; 
+}
+#whySocialContainer h2 {
+	margin: 25px 0px;
+} 
+.whyVybeServices {
+	list-style: none;
+	text-align: left;
+}
+.whyVybeServices > li {
+	margin: 15px 0px;
+}
+.arrowIcon {
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: -50px;
+	margin-right: 15px;
+	color:  #63C8CF;
+}
+.toggleDescription {
+	opacity: 0;
+	width: 50px;
+	height: 3em;
+	cursor: pointer;
+	z-index: 2;
+	vertical-align: middle;
+}
+.toggling-content {
+	display: none;
+	padding: 5px 25px;
+	line-height: 1.5em;
+}
+input[type="checkbox"]:checked ~ .toggling-content {
+	display: block;
+}
+input[type="checkbox"]:checked ~ .question {
+	color: #E35529;
+}
+input[type="checkbox"]:checked ~ .arrowIcon {
+	color: #E35529;
+/* 	transform: rotate(90deg); */
+}
+
+.otherServices {
+	text-align: center;
+	width: 49%;
+	display: inline-block;
+	padding: 2%;
+	border: 2px solid  #63C8CF;
+}
+.faqList {
+	list-style: none;
+	text-align: left;
+}
+.faqList > li {
+	margin: 15px 0px;
+}
+#vsPricing {
+	background: #FFF;
+	text-align: center;
+	width: 100%;
+	padding: 4% 2%;
+	text-align: center; 
+}
+.toggle {
+	width: 15em;
+	margin: 1em auto;
+	position: relative;
+	margin-bottom: 80px;
+}
+.toggle input {
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	width: 100%;
+	height: 28px;
+}
+.toggle input ~ .btn {
+	-webkit-transition: all .3s ease;
+}
+.toggle input:checked ~ .btn {
+	left: 50%;
+	-webkit-transition: all .3s ease;
+	height: 32px;
+}
+.toggle .btn {
+	border-radius: 12px;
+	display: block;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 32px;
+	background: transparent;
+	border: 3px solid  #E35529;
+}
+.toggle .labels {
+	position: absolute;
+	top: .5em;
+	z-index: 2;
+	font-size: .6em;
+	font-weight: bold;
+}
+.toggle .labels:before {
+	content: "Hourly";
+	position: absolute;
+	left: 50px;
+	color: black;
+}
+.toggle .labels:after {
+	content: "Monthly";
+	position: absolute;
+	right: 50px;
+	color:  #E35529;
+}
+.toggle .bg {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.7em;
+	border-radius: 12px;
+	border: 1px solid rgba(0,0,0,.2);
+	background: #fff;
+	box-shadow: 0 1px 0 0 rgba(255,255,255,1);
+}
+.pricingTier {
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 1px;
+  box-shadow: 2.5px 4.33px 7px 3px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 572px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: auto 2%;
+}
+.pricingLabel {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 50px 5px;
+	color: #FFF;
+}
+.pricingLabel > h3 {
+	line-height: 50px;
+}
+.priceCircle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	background: #FFF;
+	position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #1C2223;
+}
+.priceCircle > h4 {
+	line-height: 100px;
+}
+#bronze {
+	background: #63C8CF;
+}
+#bronze > .priceCircle {
+	border: 1px solid #63C8CF;
+}
+#silver {
+	background: #E35529;
+}
+#silver > .priceCircle {
+	border: 1px solid #E35529;
+}
+#gold {
+	background: #1C2223;
+}
+#gold > .priceCircle {
+	border: 1px solid #1C2223;
+}
+.pricingTierList {
+	list-style-type:  circle;
+	position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: left;
+}
+.pricingTierList > li {
+	margin: 10% 0;
+}
+
+.getStartedCTA {
+	color: #FFF;
+    background: #E35529;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    font-size: 1.25em;
+}
+
 #vsContactUsContainer {
 	text-align: center;
 	width: 100%;
-	padding: 5%;
+	padding: 8%;
 	background: url("../Images/sociaMediaCTA.jpg");
 	background-position: center;
 	background-size: cover;
@@ -159,27 +385,43 @@ a:visited {
 	cursor: pointer;
 	opacity: 1;
 }
+#vsContact {
+	width: 100%;
+	padding: 4% 2%;
+	text-align: center; 	
+}
 footer {
 	padding: 2%;
 	width: 100%;
 	background: #63C8CF;
 	color: white;
+	text-align: center;
+}
+footer > div {
+	display: inline-block;
+	width: 22%;
+	vertical-align: middle;
 }
 footer ul {
 	list-style: none;
-	display: inline-block;
-	width: 49%;
+	text-align: left;
 }
 footer ul li {
-	display: inline;
 	margin: 2%;
+	font-size: .75em;
+}
+footer div ul li a:hover {
+	color:  #E35529;
 }
 .socialMediaIconsContainer {
 	text-align: right;
 }
-.socialMediaIcon {
-	width: 2em;
-	height: 2em;
+.socialMediaIconsContainer > li {
+	display: inline;
+}
+.socialMediaIcon:hover {
+	color: #E35529;
+	cursor: pointer;
 }
 
 
@@ -190,6 +432,16 @@ footer ul li {
     height: 100vh;
     background-position: center;
     background-size: cover;
+}
+#aboutContainer {
+	background-image: url("../Images/vybeSocialAboutImg.jpg");	
+	width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+#aboutContainer::before {
+	opacity: .5;
 }
 #logotype {
 	width: 80%;
@@ -203,16 +455,7 @@ footer ul li {
 	width: 60%;
 	text-align: center;
 }
-input {
-	width: 50%;
-    border: 1px solid white;
-    padding: 1%;
-    height: 3em;
-}
-input:focus {
-	outline: rgb(10,25,40);
-}
-button {
+ button {
 	border: 1px solid white;
     color: white;
     background: transparent;
@@ -224,76 +467,13 @@ button:hover {
 	cursor: pointer;
 }
 button:focus {
-	background: rgb(10,25,40);
 	outline: none; 
-}
-
-
-
-
-/* Contact Us Page */
-.contactContainer {
-	text-align: center;
-	background: #1C2223;
-	padding: 2%;
-	margin-top: 10%;
-}
-.contactContainer h3 {
-	color: #9EDAE3;
-	margin: 5% auto;
-}
-.contactContainer strong {
-	color: #63C8CF;
-}
-.contactContainer h1 {
-	color: rgba(255,255,255,.8);
-	margin: 2% auto;
-}
-.contactContainer label {
-	color: rgba(255,255,255,.3);
-	display: block;
-}
-.contactContainer input {
-	width: 49%;
-	border: none;
-	border-bottom: 1px solid rgba(255,255,255,.3);
-	background: transparent;
-	color: white;
-}
-.contactContainer form {
-	text-align: left;
-	margin: 2% auto;
-	width: 70%;
-}
-.formInformationContainer {
-	display: inline-block;
-	width: 30%;
-	margin: 2% 1%;
-}
-.formInformationContainer input {
-	width: 100%;
-}
-.budgetDetails {
-	display: block;
-	width: 100%;
-}
-.budgetDetails input {
-	width: 50%;
-	display: inline-block;
-}
-.budgetDetails span {
-	color: rgba(255,255,255,.3);
-	margin-left: 5%;
-}
-.projectDetails {
-	display: block;
-	width: 100%;
 }
 .submitBtn {
 	display: block;
 	border: none;
 	border-radius: 1px;
-	background: #63C8CF;;
+	background: #63C8CF;
 	margin: 2% auto;
 	font-size: 1.25em;
 }
@@ -305,10 +485,12 @@ button:focus {
 	list-style: none;
 	text-align: left;
 	position: absolute;
-	right: -50%;
+	top: -1000%;
 	transition: 1s ease all;
 	display: none;
 	z-index: 3;
+	background: #1C2223;
+	width: 100%;
 }
 .mobileMenu > li {
 	margin-bottom: 15px;
@@ -317,6 +499,18 @@ button:focus {
 @media(max-width:768px) {
 	.mobileMenu > li {
 		font-size: 2.5em;
+	}
+	.pricingTier {
+		width: 95%;
+		margin: 1%;
+	}
+	.footerMenu {
+		display: none;
+	}
+	footer > div {
+		display: block;
+		width: 95%;
+		vertical-align: middle;
 	}
 }
 .showMobileMenu {
@@ -345,10 +539,10 @@ button:focus {
 		width: 90%;
 	}
 	.guestInfo > h1 {
-		font-size: 4em;
+		font-size: 2.5em;
 	}
 	.guestInfo > h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.ctaBtn {
 		font-size: 3em;
@@ -424,9 +618,6 @@ button:focus {
 	.individualStepProcess > p {
 		font-size: 1.5em;
 	}
-	/* .mobileMenu {
-		display: inline-block;
-	} */
   	.ctah2 {
   		font-size: 3em;
   	}
@@ -439,12 +630,7 @@ button:focus {
   		width: 60%;
   	}
   	.socialMediaIconsContainer {
-  		width: 30%;
-  		text-align: right;
-  	}
-  	.socialMediaIcon {
-  		width: 2.5em;
-  		height: 2.5em;
+   		text-align: center;
   	}
 }
 
@@ -454,19 +640,18 @@ button:focus {
 			width: 90%;
 		}
 		.guestInfo > h1 {
-			font-size: 4em;
+			font-size: 2.5em;
 		}
 		.guestInfo > h2 {
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 		.ctaBtn {
-			font-size: 3em;
+			font-size: 1.5em;
 	    	border-radius: 15px;
 		}
 		.sectionTitle {
-			font-size: 3em;
+			font-size: 2em;
 		}
-
 		input {
 			height: 3em;
 			font-size: 1em;
@@ -499,15 +684,12 @@ button:focus {
 			width: 95%;
 			padding: 5%;
 		}
-		.teamMemberPictureContainer {
-			width: 26em;
-			height: 22em;
-		}
+
 		.teamMemberContainer > h4 {
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 		.teamMemberContainer > p {
-			font-size: 2em;
+			font-size: 1em;
 		}
 		.individualApproach {
 			width: 95%;
@@ -528,14 +710,11 @@ button:focus {
 			order: 2;
 		}
 		.individualStepProcess > h4 {
-			font-size: 2.5em;
-		}
-		.individualStepProcess > p {
 			font-size: 1.5em;
 		}
-		/* .mobileMenu {
-			display: inline-block;
-		} */
+		.individualStepProcess > p {
+			font-size: 1em;
+		}
 	  	.ctah2 {
 	  		font-size: 3em;
 	  	}
@@ -548,14 +727,8 @@ button:focus {
 	  		width: 60%;
 	  	}
 	  	.socialMediaIconsContainer {
-	  		width: 30%;
-	  		text-align: right;
+	  		text-align: center;
 	  	}
-	  	.socialMediaIcon {
-	  		width: 2.5em;
-	  		height: 2.5em;
-	  	}
-
 }	
 
 @media(max-width:768px) {
@@ -568,6 +741,9 @@ button:focus {
 	.vsLogoContainer {
 		width: 10em;
 		margin-left: 15px;
+	 }
+	 #vsContactUsContainer {
+	 	padding: 15%;
 	 }
 	.burgerMenuHolder {
 		visibility: visible;
@@ -601,19 +777,19 @@ button:focus {
 		width: 80%;
 		order: 2;
 	}
-	/* .mobileMenu {
-		display: inline-block;
-	} */
   	.ctah2 {
   		font-size: 1.15em;
   	}
   	footer ul {
   		font-size: .5em;
-  		width: 60%;
+  		width: 95%;
+  		text-align: center;
   	}
   	.socialMediaIconsContainer {
-  		width: 30%;
-  		text-align: right;
+  		text-align: center;
+  	}
+  	.socialMediaIconsContainer > li {
+  		font-size: 2em;
   	}
 }
 
@@ -630,3 +806,19 @@ button:focus {
 	margin-bottom: 1%;
 	margin-top: 1%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

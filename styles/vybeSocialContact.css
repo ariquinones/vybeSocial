@@ -18,7 +18,7 @@
     color: #9EDAE3;
 }
 .wufoo .info h2 {
-    font-size: 2em;
+    font-size: 1em;
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
@@ -43,6 +43,11 @@
     font-style: normal;
     font-weight: normal;
     color: #63C8CF;
+}
+@media(max-width: 768px) {
+	.wufoo .info div {
+	    font-size: 45%;
+	}
 }
 
 .noI form li, .altInstruct form li {
@@ -106,6 +111,7 @@ form li.buttons {
     appearance: none;
     -webkit-appearance: none; 
     -moz-appearance: none;
+    margin: auto;
 }
 
 .safari input.btTxt {
@@ -117,7 +123,7 @@ form li.buttons {
     border: none;
     color: white;
     padding: 10px 20px;
-	border-radius: 2px;
+	border-radius: 6px;
 	background: #63C8CF;
 	cursor: pointer;
 }
@@ -138,8 +144,11 @@ form li.buttons {
 }
 
 #fo2li13 {
-	width: 60%;
+	width: 60% !important;
 	display: block;
+}
+.noI form li, .altInstruct form li {
+    width: 30% !important;
 }
 textarea.medium {
     height: 5em;

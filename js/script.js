@@ -1,23 +1,29 @@
-document.querySelector('button').addEventListener('click', function() {
-	var input = document.querySelector('input')
-	input.value = ''
-})
+// document.querySelector('button').addEventListener('click', function() {
+// 	var input = document.querySelector('input')
+// 	input.value = ''
+// })
 
 document.querySelector(".showMobileMenu").addEventListener('change', function() {
 	if (document.querySelector(".showMobileMenu").checked == true) {
+		
 		document.querySelector(".mobileMenu").style.display = "inline-block"
-		document.querySelector(".mobileMenu").style.right = "5px"
-		document.querySelector(".mobileMenu").style.top = "85%"
+		function slow() {
+			document.querySelector(".mobileMenu").style.right = "0px"
+			document.querySelector(".mobileMenu").style.top = "95%"
+		}
+		setTimeout(slow, 500)
 
 	}
 	if (document.querySelector(".showMobileMenu").checked == false) {
-		document.querySelector(".mobileMenu").style.right = "-50%"
-		document.querySelector(".mobileMenu").style.display = "none"
-
+		document.querySelector(".mobileMenu").style.top = "-1000%"
+		function slow() {
+			document.querySelector(".mobileMenu").style.display = "none"
+		}
+		setTimeout(slow, 1000)
 	}
 })
 $(document).scroll(function() {
-	$('.guestInfo').css('z-index', '0')
+	$('.guestInfo').css('opacity', '1')
 })
 
 $(function() {
@@ -27,8 +33,8 @@ $(function() {
 
 	$(document).on("click", "a[href*=\\#]:not([href=\\#])", function(e) {
 		var target, avail, scroll, deltaScroll;
-    	$('.guestInfo').css('z-index', '-1')
-		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+		$('.guestInfo').css('opacity', '0')
+   		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
 			target = $(this.hash);
 			target = target.length ? target : $("[id=" + this.hash.slice(1) + "]");
 
@@ -83,4 +89,8 @@ $(function() {
 			}
 		});
 	}
+
+
+
+
 });
