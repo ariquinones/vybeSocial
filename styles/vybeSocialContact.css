@@ -241,10 +241,15 @@ textarea.medium {
 }
 
 
-
-
-
-
+input#saveForm.btTxt.submit {
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	color: white;
+	background: #63C8CF;
+	font-size: 1.5em;
+	padding: 3% 6%;
+}
 
 
 
