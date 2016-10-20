@@ -8,7 +8,7 @@ $('.showMobileMenu').on('change', function() {
 		$('.mobileMenu').css('display', 'inline-block')
 		function slow() {
 			$('.mobileMenu').css('right', '0px')
-			$('.mobileMenu').css('top', '95%')
+			$('.mobileMenu').css('top', '120px')
 		}
 		setTimeout(slow, 500)
 	}
