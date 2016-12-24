@@ -13,6 +13,41 @@ a {
 a:visited {
 	text-decoration: none;
 }
+#scrollDownArrow {
+	position: absolute;
+	z-index: 5;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-80%);
+	text-align: center;
+	cursor: pointer;
+}
+#scrollDownArrow  .fa-arrow-circle-o-down {
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	color: #63C8CF;
+}
+.whatWeDoMenuOption {
+	position: relative;
+}
+.whatWeDoMenuOption:hover .servicesLinkMenu {
+	opacity: 1;
+}
+.servicesLinkMenu {
+	transition: 1s all;
+	opacity: 0;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	list-style: none;
+	background: transparent;
+	color: white;
+	border-radius: 2px;
+	width: max-content;
+}
+.serviceItemMenu {
+	display: block !important;
+	margin-left: -25px;
+}
 .textCharcoal {
 	color: #1C2223;
 	opacity: .8;
@@ -70,6 +105,7 @@ a:visited {
 	padding: 5px 30px;
 	font-size: 1.25em;
 	margin-top: 15px;
+	box-shadow: 4px 6.928px 7.36px 0.64px rgba(0, 0, 0, 0.35);
 }
 #ourApproachContainer {
 	width: 100%;
@@ -363,7 +399,14 @@ input[type="checkbox"]:checked ~ .arrowIcon {
     border: none;
     font-size: 1.25em;
 }
-
+#vsHomeContactContainer {
+	text-align: center;
+	width: 100%;
+	padding: 10%;
+	background: url("../Images/vybeSocialMarketingAgency.jpg");
+	background-position: center;
+	background-size: cover;
+}
 #vsContactUsContainer {
 	text-align: center;
 	width: 100%;
@@ -372,6 +415,39 @@ input[type="checkbox"]:checked ~ .arrowIcon {
 	background-position: center;
 	background-size: cover;
 }
+#vsWebDesignContainer {
+	text-align: center;
+	width: 100%;
+	padding: 8%;
+	background: url("../Images/vybeSocialWebsiteDesign.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#vsBrandingCTAContainer {
+	text-align: center;
+	width: 100%;
+	padding: 8%;
+	background: url("../Images/vybeSocialStrategy.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#vsBlogSetupCTAContainer {
+	text-align: center;
+	width: 100%;
+	padding: 8%;
+	background: url("../Images/vybeSocialBlogSetup.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#vsGraphicDesignCTAContainer {
+	text-align: center;
+	width: 100%;
+	padding: 8%;
+	background: url("../Images/vybeSocialGraphicDesign.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
 .contactUsBtn {
 	background: #E35529;
 	color: white;
@@ -428,6 +504,34 @@ footer div ul li a:hover {
 /* css for splash page */
 #container {
 	background-image: url("../Images/vybeSocialHeaderImg.jpg");	
+	width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#newHomecontainer {
+	background-image: url("../Images/vsNewHome.jpg");	
+	width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#graphicDesignContainer {
+	background-image: url("../Images/vsGraphicDesignHeader.jpg");	
+	width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#blogSetupContainer {
+	background-image: url("../Images/vsBlogSetupHeader.jpg");	
+	width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#brandingHeaderContainer {
+	background-image: url("../Images/vsBrandingHeader.jpg");	
 	width: 100%;
     height: 100vh;
     background-position: center;
@@ -498,7 +602,10 @@ button:focus {
 }
 @media(max-width:768px) {
 	.mobileMenu > li {
-		font-size: 2em;
+		font-size: 1.5em;
+	}
+	.serviceItemMenu {
+		margin-left: -20px;
 	}
 	.pricingTier {
 		width: 95%;
@@ -523,8 +630,8 @@ button:focus {
 	z-index: 2;
 }
 .burgerMenuHolder {
-	width: 5em;
-	height: 5em;
+	width: 4em;
+	height: 4em;
 	position: absolute;
 	top: 0px;
 	right: 15px;
@@ -644,17 +751,21 @@ button:focus {
 			width: 90%;
 		}
 		.guestInfo > h1 {
-			font-size: 2.5em;
+			font-size: 1.5em;
 		}
 		.guestInfo > h2 {
 			font-size: 1.5em;
 		}
 		.ctaBtn {
-			font-size: 1.5em;
+			font-size: 1em;
 	    	border-radius: 15px;
 		}
 		.sectionTitle {
 			font-size: 2em;
+		}
+		#graphicDesignContainer, #newHomecontainer, #container, #blogSetupContainer, #brandingHeaderContainer, #websiteDesignContainer {
+			position: relative;
+			background-position: left !important;
 		}
 		input {
 			height: 3em;
@@ -739,17 +850,14 @@ button:focus {
 	.vsHeader {
 		text-align: left;
 		background: #1C2223;
-		height: 90px;
+		height: 80px;
 		z-index: 5;
 	}
 	.vsMenu {
 		display: none;
 	}
-	.vsLogoContainer {
-		/* width: 10em;
-		margin-left: 15px;*/		
-		width: 5em;
-		/* height: 5em; */
+	.vsLogoContainer {	
+		width: 4em;
 	    position: absolute;
 	    top: 20px;
 	    left: 15px;
@@ -762,7 +870,7 @@ button:focus {
 	}
 	.guestInfo {
 		left: 50%;
-		width: 80%;
+		width: 100%;
 	}
 	.individualStepProcess > p {
 		font-size: 1.1em;
@@ -822,15 +930,304 @@ button:focus {
 
 
 
+#whatWeDo {
+	background: #FFF;
+	padding: 50px;
+}
+#whatWeDo > h2 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.whatWeDoCol {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+@media(max-width:768px) {
+	.whatWeDoCol {
+		display: block;
+		vertical-align: top;
+		width: 100%;
+	}
+}
+.whatWeDoCol > p {
+	color: #1C2223;
+	margin: 15px 5px;
+}
+.whatWeDoBrief {
+	opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(-55px, 0px, 0px);
+  -webkit-transform: translate3d(-55px, 0px, 0px);
+  transform: translate3d(-55px, 0px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+}
+.whatWeDoOfferingLinkLeft {
+	display: block;
+	text-align: left;
+	padding: 0px 15px;
+}
+.whatWeDoOfferingLinkRight {
+	display: block;
+	text-align: right;
+	padding: 0px 15px;
+}
+.whatWeDoOffering {
+	display: inline-block;
+	border: 1px solid #63C8CF;
+    background: #63C8CF;
+    border-radius: 5px;
+    padding: 20px 12px;
+    margin: 15px 5px;
+    color: #FFF;
+	box-shadow: 4px 6.928px 7.36px 0.64px rgba(0, 0, 0, 0.35);
+	min-width: 45%;
+	opacity: 0;
+	-moz-transition: all 700ms ease-out;
+	-webkit-transition: all 700ms ease-out;
+	-o-transition: all 700ms ease-out;
+	transition: all 700ms ease-out;
+	-moz-transform: translate3d(55px, 0px, 0px);
+	-webkit-transform: translate3d(55px, 0px, 0px);
+	transform: translate3d(55px, 0px, 0px);
+	-o-transform: translate(0px, 200px);
+	-ms-transform: translate(0px, 200px);
+}
+
+/* Team member animation */
+.teamMemberContainer {
+	opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200px, 0px);
+}
+.moveUp {
+	opacity: 1;
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
 
 
+/* Style Classes User All Over*/
+.btn {
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btnOrange {
+	border: 1px solid #E35529;;
+    background: #E35529;;
+    border-radius: 5px;
+    padding: 20px 12px;
+    margin: auto;
+    color: #FFF;
+	box-shadow: 4px 6.928px 7.36px 0.64px rgba(0, 0, 0, 0.35);
+	width: inherit;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline;
+}
+.btnAqua {
+	border: 1px solid #63C8CF;
+    background: #63C8CF;
+    border-radius: 5px;
+    padding: 20px 12px;
+    margin: auto;
+    color: #FFF;
+	box-shadow: 4px 6.928px 7.36px 0.64px rgba(0, 0, 0, 0.35);
+	width: inherit;
+}
+.serviceBtn {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px;
+	align-items: center;
+}
+.btnAlignCenter {
+	text-align: center;
+}
+.sectionColorWhite {
+	background: #FFF;
+	padding: 50px;
+}
+.sectionColorDark {
+	background: #1C2223;
+	padding: 50px;
+}
+.sectionTitle {
+	text-align: center;
+	text-transform: uppercase;
+}
+.serviceProcessLineLeft {
+	display: inline-block;
+	background-image: url("../Images/lineLeft.png");
+	background-position: center center;
+	background-size: cover;
+}
+.serviceProcessLineRight {
+	display: inline-block;
+	background-image: url("../Images/lineRight.png");
+	background-position: center center;
+	background-size: cover;
+}
+.serviceProcessLineMobile {
+	display: none;
+	height: 2em;
+}
+.serviceProcessLineMobile > img {
+	width: 100%;
+	height: 100%;
+}
+.offeringServiceIcon {
+	width: 2.5em;
+	height: 2.5em;
+	vertical-align: middle;
+}
+/* Web design page */
+#websiteDesignContainer {
+    background-image: url(../Images/vybeSocialWebsiteDesignHeader.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.webdesignContent > * {
+	margin: 15px 0px;
+}
+.webdesignList {
+	display: inline-block;
+}
+.serviceProcessCol > div {
+	width: 49%;
+	vertical-align: middle;
+	min-height: 3em;
+	margin: 15px 0px;
+}
+.btnContainer {
+	display: inline-block;
+}
 
+/* Branding Page CSS */
+#brandingContainer > div {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 0px;
+}
 
+/* Animation Classes  */
+.preUpAnimation {
+	opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200px, 0px);
+}
+.preLeftAnimation {
+	opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(-55px, 0px, 0px);
+  -webkit-transform: translate3d(-55px, 0px, 0px);
+  transform: translate3d(-55px, 0px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+}
+.preRightAnimation {
+	opacity: 0;
+	-moz-transition: all 700ms ease-out;
+	-webkit-transition: all 700ms ease-out;
+	-o-transition: all 700ms ease-out;
+	transition: all 700ms ease-out;
+	-moz-transform: translate3d(55px, 0px, 0px);
+	-webkit-transform: translate3d(55px, 0px, 0px);
+	transform: translate3d(55px, 0px, 0px);
+	-o-transform: translate(0px, 200px);
+	-ms-transform: translate(0px, 200px);
+}
 
+.moveUpAnimation {
+	opacity: 1;
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
+.moveLeft {
+	opacity: 1;
+   -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+.moveRight {
+	opacity: 1;
+	 -moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
+@media(max-width:768px) {
+	.serviceProcessCol > div {
+		width: 100%;
+	}
+	.btnContainer {
+		display: block;
+	}
+	.serviceProcessLineLeft, .serviceProcessLineRight {
+		display: none;
+	}
+	.serviceProcessLineMobile {
+		display: block;
+	}
+	#brandingContainer > div {
+	width: 100%;
+	display: block;
+	}
+	.whatWeDoOfferingLinkLeft, .whatWeDoOfferingLinkRight {
+		text-align: center;
+	}
+	.whatWeDoOffering {
+		min-width: 100%;
+	}
+}
 
-
-
-
-
-
-
+/* Logo Graphic Design page */
